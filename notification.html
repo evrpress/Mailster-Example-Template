@@ -1,0 +1,73 @@
+<!--
+
+	Template Name: Mailster Example Template
+	Template URI: http://rxa.li/mailster
+	Description: Mailster Example Template helps you to create your custom template for the Mailster Newsletter Plugin for WordPress
+	Author: revaxarts
+	Author URI: https://revaxarts.com
+	Version: 1.0
+
+-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width" />
+<title>{subject}</title>
+</head>
+<body>
+
+<style type="text/css">
+
+	/* your style here*/
+	h1{color:#5CA8CD/*Example Color*/}
+	p{color:#000/*Unchangeable Color*/}
+
+	/*hide preheader by deafult */
+	div.preheader{line-height:0px;font-size:0px;height:0px;display:none !important;display:none;visibility:hidden;}
+
+</style>
+
+<table class="bodytbl" width="100%" cellspacing="0" cellpadding="0">
+<tr>
+	<td background="" align="center">
+
+	<table width="600" cellspacing="0" cellpadding="0">
+	<tr>
+		<td height="24" align="center" valign="middle">
+			<div class="preheader">{preheader}</div>
+			<div><single label="preintro"></single></div>
+		</td>
+	</tr>
+	</table>
+
+	<h1><single label="Headline">{headline}</single></h1>
+	<div>
+	<multi label="Multi Line">
+		{content}
+	</multi>
+	</div>
+
+	<table width="600" cellspacing="0" cellpadding="0">
+	<tr>
+		<td valign="top" align="center">
+			<table width="100%" cellpadding="0" cellspacing="0">
+			<tr>
+
+				<td valign="top" align="left">
+					<div><single label="Notification">{notification}</single></div>
+					<div><single label="Copyright">{copyright}</single></div>
+				</td>
+
+			</tr>
+			</table>
+		</td>
+	</tr>
+	</table>
+
+
+	</td>
+</tr>
+</table>
+</body>
+</html>
